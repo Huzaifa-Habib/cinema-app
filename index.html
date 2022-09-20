@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Cinema</title>
+</head>
+<body>
+    <div class="main">
+        <div class="info-div" id="info">
+            <div id="modal">
+                <p id="close" onClick = "closeM()">X</p>
+                <h1>User Information</h1>
+
+                <div class="user-email">
+                    <div class="user">
+                        <p>Full name</p>
+                         <input type="text" readonly id="userName">
+                    </div>
+
+                    <div class="email">
+                        <p>Email Address</p>
+                        <input type="text" readonly id="gmail">
+
+                     </div>
+
+                </div>
+
+                <div class="address">
+                    <p>Address</p>
+                    <input type="text" readonly id="address">
+                </div>
+
+                <div class="pass-dob">
+                    <div class="pass">
+                        <p>Password</p>
+                        <input type="text" readonly id="pass">
+                    </div>
+
+                    <div class="dob">
+                        <p>Date Of Birth</p>
+                        <input type="text" readonly id="dob">
+                    </div>
+
+                </div>
+
+                <div class="zip-phone">
+                    <div class="zip">
+                        <p>Postal Code</p>
+                        <input type="text" readonly id="postal">
+                    </div>
+
+                    <div class="phone">
+                        <p>Phone Number</p>
+                        <input type="text" readonly id="phone">
+
+
+
+                    </div>
+
+                </div>
+              
+            </div>
+
+
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <h3>LOGO</h3>
+            </div>
+
+            <div class="menu">
+                <img src="../../../assets/ham.png" alt="" height="40" width="40" onClick = "p()" style="cursor: pointer;">
+
+                
+
+            </div>
+
+
+        </div>
+        <div class="n" id="drop">
+            <div class="drop-down">
+                <a href="../../dashboard.html"> <p>Dashboard</p></a>
+                <!-- <p id="pro" onClick = "modalF()">Profile</p> -->
+                <a onClick = "main()" id="j"> <p>Log Out</p></a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-body" id="moviesSection">
+        <div class="container" style="width: 100% ;padding:5px; ">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+    
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="./assets/cars1.jpg" alt="Los Angeles" style="width:100%;">
+              </div>
+        
+              <div class="item">
+                <img src="./assets/cars2.jpg" alt="Chicago" style="width:100%;">
+              </div>
+            
+              <div class="item">
+                <img src="./assets/cars3.jpg" alt="New york" style="width:100%;">
+              </div>
+    
+              <div class="item">
+                <img src="./assets/cars4.jpg" alt="New york" style="width:100%;">
+              </div>
+    
+              
+            </div>
+        
+           
+          </div>
+        </div>
+      
+    
+    <!-- End of carousel -->
+    
+    
+      <div class="main-content"  >
+        <h1 class="mh" style="color: white; text-transform:uppercase; font-weight: bolder; text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif;">Now showing</h1>
+        <div class="row-1">
+          <div class="card">
+            <div class="content">
+              <div class="front">
+                <img src="./assets/mov1.jpg" alt="">
+                
+              </div>
+    
+              <div class="back">
+                <h2>WOMEN</h2>
+                <div class="film-genre">
+                  <p>Crime,Drama</p>
+              
+                </div>
+    
+                <p class="lang">English</p>
+                <p class="desc">A small town detective investigates into a Sociology professor when a mutilated body is found and women have gone missing</p>
+                <div class="btn">
+                <a href="./movies-sec/women/women.html"><button class="glow-on-hover" type="button">Check out</button></a>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+      <!-- End of card 1 -->
+    
+      <div class="card">
+        <div class="content">
+          <div class="front">
+            <img src="./assets/mov2.jpg" alt="">
+            
+          </div>
+    
+          <div class="back">
+            <h2>HONEST THIEF</h2>
+            <div class="film-genre">
+              <p>Action,Thriller</p>
+          
+            </div>
+    
+            <p class="lang">English</p>
+            <p class="desc">Tom Dolan, a former US Marine and demolitions expert, has become a successful bank robber nicknamed the "In-and-Out Bandit."</p>
+            <div class="btn">
+              <a href="./movies-sec/thief/theif.html"><button class="glow-on-hover" type="button">Check out</button></a>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    <!-- End Of Card 2 -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="./assets/mov3.jpg" alt="">
+          
+        </div>
+    
+        <div class="back">
+          <h2>CARMA</h2>
+          <div class="film-genre">
+            <p>Crime,Thriller</p>
+        
+          </div>
+    
+          <p class="lang">Urdu</p>
+          <p class="desc">A crime thriller movie based on a kidnapping situation that's about to go horribly wrong!</p>
+          <div class="btn">
+            <a href="./movies-sec/carma/carma.html"><button class="glow-on-hover" type="button">Check out</button></a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <!-- End Of card3 -->
+    </div>
+    <!-- End of ROw 1 -->
+    
+      <div class="row-2">
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="./assets/mov4.jpg" alt="">
+              
+            </div>
+        
+            <div class="back">
+              <h2>PINOCCHIO</h2>
+              <div class="film-genre">
+                <p>Adventure,Family</p>
+            
+              </div>
+        
+              <p class="lang">English</p>
+              <p class="desc">In a small Italian village in 1895, vagrant cricket Jiminy Cricket enters the home of a widowed elderly woodcarver named Geppetto, who lives with his pet kitten Figaro and goldfish Cleo.</p>
+              <div class="btn">
+                <a href="./movies-sec/pinno/pinno.html"><button class="glow-on-hover" type="button">Check out</button></a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End of card 4 -->
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="./assets/mov5.jpg" alt="">
+              
+            </div>
+        
+            <div class="back">
+              <h2>EMPIRE OF LIGHT</h2>
+              <div class="film-genre">
+                <p>Romance,Drama</p>
+            
+              </div>
+        
+              <p class="lang">English</p>
+              <p class="desc">Set in an English seaside town in the early 1980s, EMPIRE OF LIGHT is a powerful and poignant story about human connection and the magic of cinema from Academy Award® winning director Sam Mendes.</p>
+              <div class="btn">
+                <a href="./movies-sec/empire/empire.html"><button class="glow-on-hover" type="button">Check out</button></a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End of card5 -->
+    
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="./assets/mov6.jpg" alt="">
+              
+            </div>
+        
+            <div class="back">
+              <h2>FALL</h2>
+              <div class="film-genre">
+                <p>Thriller,Survival</p>
+            
+              </div>
+        
+              <p class="lang">English</p>
+              <p class="desc">Best friends Becky and Hunter find themselves at the top of a 2,000-foot radio tower.</p>
+              <div class="btn">
+                <a href="./movies-sec/fall/fall.html"><button class="glow-on-hover" type="button">Check out</button></a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End of card 6 -->
+    
+      </div>
+      <!-- ENd of row 2 -->
+    
+      <div class="row-3">
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="./assets/mov7.jpg" alt="">
+              
+            </div>
+        
+            <div class="back">
+              <h2>ELVIS</h2>
+              <div class="film-genre">
+                <p>Musical,Drama</p>
+            
+              </div>
+        
+              <p class="lang">English</p>
+              <p class="desc">The life of American music icon Elvis Presley, from his childhood to becoming a rock and movie star in the 1950s. </p>
+              <div class="btn">
+                <a href="./movies-sec/elvis/elvis.html"><button class="glow-on-hover" type="button">Check out</button></a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End of card 7 -->
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="./assets/mov8.jpg" alt="">
+              
+            </div>
+        
+            <div class="back">
+              <h2>PREY FOR THE DEVIL</h2>
+              <div class="film-genre">
+                <p>Horror,Thriller</p>
+            
+              </div>
+        
+              <p class="lang">English</p>
+              <p class="desc">A nun prepares to perform an exorcism and comes face to face with a demonic force with mysterious ties to her past.</p>
+              <div class="btn">
+                <a href="./movies-sec/devil/devil.html"><button class="glow-on-hover" type="button">Check out</button></a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End of card 8 -->
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="./assets/mov9.jpg" alt="">
+              
+            </div>
+        
+            <div class="back">
+              <h2>SAMARITAN</h2>
+              <div class="film-genre">
+                <p>Action,Fantasy</p>
+            
+              </div>
+        
+              <p class="lang">English</p>
+              <p class="desc">A young boy learns that a superhero who was thought to have gone missing after an epic battle twenty years ago may in fact still be around.</p>
+              <div class="btn">
+                <a href="./movies-sec/smartian/smartian.html"><button class="glow-on-hover" type="button">Check out</button></a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End of card 9 -->
+    
+      </div>
+      <!-- ENd of row 3 -->
+    
+    
+    </div>
+    </div>
+
+    <!-- End of movies section -->
+
+    <!-- Start of ticket section -->
+
+    <div id="ticketMainSec">
+
+    </div>
+    
+    
+ 
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
