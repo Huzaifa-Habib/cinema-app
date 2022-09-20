@@ -1,0 +1,420 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    overflow: hidden;
+
+}
+.navbar{
+    background-color: white;
+    width: calc(100vw);
+    color: black;
+    display: flex;
+    text-transform: uppercase;
+}
+.checkInfo{
+    margin-left: auto;
+    padding-right: 20px;
+    background-color: crimson;
+    color: aliceblue;
+    padding-left: 10px;
+    cursor: pointer;
+    display: none;
+    
+    
+    
+}
+
+#popUps{
+    width: calc(100vw);
+    height: calc(100vh);
+    background-color: rgba(0, 0, 0, 0.562);
+    position: absolute;
+    display: none;
+    color: red;
+}
+
+#pop1, #pop2, #pop3{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(40vw);
+    background-color: white;
+    z-index: 2;
+    padding-bottom: 20px;
+    display: none;
+    
+}
+
+#close{
+    text-align: end;
+    font-size: 18px;
+    padding-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main{
+    overflow-y: scroll;
+    height: calc(100vh);
+}
+
+.movie-detail{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+}
+
+.movie-poster {
+    width: calc(40vw);
+}
+
+.movie-poster img{
+    width: 100%;
+    height: calc(80vh);
+}
+
+.details{
+    margin-left: 20px;
+    width: calc(50vw);
+   
+
+}
+.details h1{
+    font-size: 46px;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    
+}
+
+.details p{
+    font-size: 13px;
+    color: rgba(128, 128, 128, 0.959);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.movie-desc p{
+    font-size: 16px;
+    color: white;
+
+}
+.tickets-sec{
+    margin-top: 40px;
+}
+.total-cost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.quantity-div{
+    margin-left: 40px;
+
+
+}
+
+
+.quantity{
+    width: 80%;
+    padding: 8px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+ 
+}
+
+/* .total-div h2{
+    background-color: cadetblue;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+
+} */
+.regular{
+    /* background-color: teal; */
+    padding: 10px 10px;
+    width: calc(15vw);
+    cursor: pointer;
+}
+.slots-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.empty{
+    padding: 0px 15px;
+    background-color: white;
+    width: 2%;
+    margin-left: 20px;
+    margin-right: 40px;
+    
+}
+.booked{
+    padding: 0px 15px;
+    background-color: dodgerblue;
+    width: 2%;
+    margin-left: 20px;
+    margin-right: 40px;
+
+
+}
+.reserved{
+    padding: 0px 15px;
+    background-color: yellow;
+    width: 2%;
+    margin-left: 20px;
+    margin-right: 40px;
+
+}
+
+.top, .middle, .front{
+    background-color: indianred;
+    width: calc(80vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+.top, .middle, .front h1{
+    text-align: center;
+}
+
+table{
+    border-spacing: 20px;
+}
+
+
+
+td{
+    padding: 10px;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+     
+}
+
+.booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 3%;
+    padding-bottom: 60px;
+    
+    
+
+
+    
+}
+
+.booking button{
+    padding: 10px 60px;
+    background-color: yellow;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: crimson;
+    font-size: 18px;
+    cursor: pointer;
+
+
+
+}
+
+#ticketInfo{
+    width: calc(100vw);
+    height: calc(100vh);
+    background-color: rgba(0, 0, 0, 0.562);
+    position: absolute;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+
+
+}
+
+#furtherDetails{
+    background-color: white;
+    z-index: 2;
+    width: calc(60vw);
+    /* display: flex; */
+    /* display: none; */
+    padding-left: 20px;
+
+
+    
+}
+
+#furtherDetails span{
+    color: green;
+    font-weight: 500;
+    padding-left: 10px;
+
+}
+
+#total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+#total button{
+    font-weight: 600;
+    cursor: pointer;
+}
+#total input{
+    outline: none;
+    border: none;
+    padding: 10px 0px;
+    color: green;
+}
+
+@media screen and (max-width:980px) {
+    iframe{
+        width: calc(40vw);
+    }
+    
+}
+@media screen and (max-width:760px) {
+    .movie-poster{
+        width: calc(90vw);
+
+    }
+    .movie-poster img{
+        height: calc(60vh);
+    }
+    .movie-detail{
+        flex-direction: column;
+    }
+    .details{
+        width: calc(90vw);
+        padding-top: 40px;
+
+    }
+    iframe{
+        width: calc(80vw);
+    }
+    #pop3, #pop1, #pop2{
+        width: calc(60vw);
+    }
+
+    
+
+}
+
+@media screen and (max-width:660px) {
+    .empty{
+        display: none;
+    }
+    .reserved{
+        display: none;
+    }
+    .booked{
+        display: none;
+    }
+    .slots-sec p{
+        margin-left: 40px;
+    }
+
+    
+    table{
+        border-spacing: 5px;
+    }
+    .top, .middle, .front{
+        width: calc(90vw);
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    .top, .middle, .front{
+        width: calc(100vw);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    iframe{
+        width: calc(85vw);
+        margin: 0px;
+    }
+    .movie-poster img{
+        width: calc(95vw);
+        margin: 0px!important ;
+        padding: 0px !important;
+        height: calc(50vh);
+    }
+    .movie-poster{
+        margin: 0px !important;
+        padding: 0px !important;
+
+
+    }
+    .ticket-price{
+        width: calc(50vw);
+    }
+
+    .ticket-price h2{
+        font-size: 16px;
+    }
+
+    .quantity-div h2{
+        font-size: 16px;
+
+
+    }
+    .slots-sec p{
+        margin-left: 10px;
+    }
+
+    .details h1{
+        font-size: 30px;
+    }
+    .movie-desc p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    #pop3, #pop1, #pop2{
+        width: calc(80vw);
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    #furtherDetails{
+        width: calc(90vw) !important;
+    }
+   
+
+}
+
+@media screen and (max-width:350px) {
+    .ticket-price h3{
+        font-size: 16px;
+    }
+    .ticket-price{
+        width: calc(60vw);
+    }
+    .checkInfo h3{
+        font-size: 16px;
+    }
+    #pop3 p{
+        font-size: 16px !important;
+    }
+
+}
+
+

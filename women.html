@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Ticket</title>
+    <link rel="stylesheet" href="./women.css">
+    <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
+
+</head>
+<body>
+    <div id="ticketInfo">
+        <div id="furtherDetails"> 
+            <p id="close" title="close" onClick ="closeF1()">X</p>
+                <h3 style="text-align:center ;">Women(2021)</h3>
+
+
+        
+
+            <div id="seatsNo">
+                <h3>Your Seats Number Are:</h3>
+
+            </div>
+            <h3>Youe Total Price Are:</h3>
+
+            <div id="totalPrice">
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html" style="text-decoration: none; color:black;"><h3 style="cursor: pointer;">Cinema</h3></a>
+
+        </div>
+        <div class="checkInfo" onClick = "showDet()" >
+            <h3 >My Ticket Info</h3>
+
+        </div>
+
+    </div>
+    <div id="popUps">
+        <div id="pop1">
+            <p id="close" title="close" onClick ="closeF()">X</p>
+            <h3 style="text-transform: uppercase; text-align:center">Please Select Your Ticket or seats First!</h3>
+
+        </div>
+
+        <div id="pop2">
+            <p id="close" title="close" onClick ="closeF()">X</p>
+            <h3 style="text-transform: uppercase; text-align:center">You can not select more seats than your tickets</h3>
+
+        </div>
+
+        <div id="pop3">
+            <p id="close" title="close" onClick ="closeF()">X</p>
+            <h3 style="text-transform: uppercase; text-align:center">You have more tickets left so you can buy more seats!</h3>
+
+        </div>
+
+        
+
+    </div>
+
+   
+    <div class="main">
+        <div class="movie-detail">
+            <div class="movie-poster">
+                <img src="./assets/mov1.jpg" alt="">
+
+            </div>
+
+            <div class="details">
+                <h1 id="movieName">Women (2021)</h1>
+                <p>Directed by Anton Sigurðsson| Starring Kylie Delre, Anna Maiche, Cindy Hogan</p>
+                <hr>
+                
+                <div class="movie-desc">
+                    <p>A small-town detective investigates a case of several missing women after a mutilated body turns up in the trunk of a car.</p>
+    
+                </div>
+                <hr>
+
+                <div class="movie-trailer">
+                    <iframe width="560" height="350" src="https://www.youtube.com/embed/iKZGsoZmkRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="tickets-sec">
+            <div class="total-cost">
+                <div class="ticket-price">
+                    <h2>Ticket Price:</h2>
+                    <h3 class="regular" onClick="regular()" id="regular">Rs.900</h3>
+
+                </div>
+
+                <div class="quantity-div">
+                    <h2>Number Of Tickets:</h2>
+                    <input type="number" class="quantity" id="input">
+                </div>
+               
+
+               
+
+            </div>
+            <div id="total">
+                <button onClick="getTotal()"> <input type="text" name="" id="showTotal" readonly>Get Total Price</button>
+
+            </div>
+            <div class="slots-sec">
+                <p>Avaliable Seats</p>
+
+                <div class="empty">
+
+                </div>
+                <p style="color:dodgerblue ;">Booked Seats</p>
+                <div class="booked">
+
+                </div>
+                <p style="color: yellow;">Reserved Seats</p>
+                <div class="reserved">
+
+                </div>
+
+            </div>
+            <div class="seats-sec">
+                <div class="top">
+                    <h1>Top Row Seats</h1>
+                    <table>
+                        <tr>
+                            <td onClick="seats1('3A')" id="1">3A</td>
+                            <td onClick="seats2('3B')" id="2">3B</td>
+                            <td onClick="seats3('3C')" id="3">3C</td>
+                            <td onClick="seats4('3D')" id="4">3D</td>
+                            <td onClick="seats5('3E')" id="5">3E</td>
+                            <td onClick="seats6('3F')" id="6">3F</td>
+                            <td onClick="seats7('3G')" id="7">3G</td>
+                            <td onClick="seats8('3H')" id="8">3H</td>
+                            
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="middle">
+                    <h1>Middle Row Seats</h1>
+                    <table>
+                        <tr>
+                            <td onClick="seats9('2A')"  id="9">2A</td>
+                            <td onClick="seats10('2B')" id="10">2B</td>
+                            <td onClick="seats11('2C')" id="11">2C</td>
+                            <td onClick="seats12('2D')" id="12">2D</td>
+                            <td onClick="seats13('2E')" id="13">2E</td>
+                            <td onClick="seats14('2F')" id="14">2F</td>
+                            <td onClick="seats15('2G')" id="15">2G</td>
+                            <td onClick="seats16('2H')" id="16">2H</td>
+                            
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="front">
+                    <h1>Front Row Seats</h1>
+                    <table>
+                        <tr>
+                            <td onClick="seats17('1A')" id="17">1A</td>
+                            <td onClick="seats18('1B')" id="18">1B</td>
+                            <td onClick="seats19('1C')" id="19">1C</td>
+                            <td onClick="seats20('1D')" id="20">1D</td>
+                            <td onClick="seats21('1E')" id="21">1E</td>
+                            <td onClick="seats22('1F')" id="22">1F</td>
+                            <td onClick="seats23('1G')" id="23">1G</td>
+                            <td onClick="seats24('1H')" id="24" >1H</td>
+                            
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+            <div class="booking">
+                 <div class="wrapper">
+                    <button onCLick="bookF()">BOOK NOW!</button>
+                </div>
+    
+           
+    
+            </div>
+    
+
+        </div>
+    </div>
+
+       
+    
+
+    <script src="./women.js"></script>
+</body>
+</html>
